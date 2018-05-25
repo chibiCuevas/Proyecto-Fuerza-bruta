@@ -29,10 +29,10 @@ def optimizarTiempo(mH,mA):
             sumaTiempos=sumaTiempos+TiempoEmpleado
 
 def primero(fin,Articulos):
-    return Articulos[['A']:[fin]]
+    return Articulos[['A']:[fin]]#duda
 
 def validar(numArticulos):#Validar el número de productos
-    if (numArticulos<=5):
+    if (numArticulos=5):
         return True
     return False
 
@@ -46,13 +46,9 @@ def siguiente(c,t):
         return c
     return -1
 
-def fuerzaBrutaPiezas():
-    n=len(s)
-    m=len(cadena)
-    c=primero(len (s),cadena)
-    pos=0
-    numocur=0
-    while pos!=m-n+1:
+def combinacionPiezas(Articulos):
+    combinacion=[]
+    while (Articulos>0):
         if validar(c,s):
             numocur=numocur+1
             mostrar(c,numocur,pos)
